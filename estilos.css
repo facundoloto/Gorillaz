@@ -1,0 +1,44 @@
+
+body{
+  background-image: url(fondo_3.png) ;
+  background-repeat: no-repeat;
+  position: center;
+  width: 100%;
+  color:white;
+
+}
+.title{
+ text-align: center;
+}
+.logo{
+  text-align: center;
+  font-size: 100%;
+  font-family:'Hind', sans-serif;
+  color: rgb(255, 255, 255);
+}
+.perfil{
+  display:block;
+  margin:auto;
+}
+.menu ul li{
+  align-items: center;
+  display:inline-block;
+  margin:20px;
+}
+.menu ul li a img:hover{
+  color: brown;
+}
+.center{
+  text-align: center;
+}
+footer{
+  font-family:'Bangers', cursive;
+  font-size: 0.8em;
+}
+button{
+  background-color: transparent;
+  border: transparent;
+}
+footer:hover{
+  color: brown;
+}
