@@ -1,6 +1,6 @@
 
 body{
-  background-image: url(imagenes/fondo_3.png) ; 
+  background-image: url(imagenes/fondo_3.png )  ; 
   background-repeat: no-repeat;/*sirve para que la imagen no se repita como un collage,sino que quede estatica*/
 }
 .linea{
@@ -34,7 +34,7 @@ margin-left: 20px;
 }
 
 .imagen:hover {
-  filter: opacity(.5); /*efecto de transpariencia */
+  filter: opacity(.8); /*efecto de transpariencia */
 }
 .botones{
   background-color: transparent;
