@@ -1,0 +1,160 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+:root{
+--font:'Balsamiq Sans', cursive;
+--color:hsla(0, 0%, 100%, .7);
+}
+
+.fondo{
+display:block;
+background-image: url("imagenes/wallpaperbetter.jpg") ; 
+background-repeat:no-repeat;/*sirve para que la imagen no se repita como un collage,sino que quede estatica*/ /*propiedad cover estira la imagen lo mas que puede*/
+background-attachment:fixed;
+background-size:cover;
+overflow:scroll;/*oculta lo que escapa de su contenido,en este caso la imagen de fondo deja un espacio en blanco,scroll para que siga para abajo el contenido*/
+width:100vw;
+height:100vh; 
+}
+.fondo::before{
+content:"";
+position: absolute; /*resetea el absolute para que ocupe todo el tamaño de su contenedor osea que el efecto se aplique a todo el contenedor*/
+top:0;
+bottom:0;
+left:0;
+right:0;
+background-color: rgba(0,0,0,.5);
+}
+
+.cabezera{
+position: relative;
+}
+.cabezera a img{
+margin-top:20px;
+width:600px;
+height:200px;
+display:block;
+margin:auto;
+}
+.menu-right {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-right ul {
+    display: inline;
+  }
+  .menu-right li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .imagen:hover {
+    filter: opacity(0.5); /*efecto de transpariencia */
+    transition-duration: 0.7s;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: center;
+  }
+  .menu li {
+    text-align: center;
+    margin: 30px 0 60px 50px;
+    font-family: Arial, Sans-Serif;
+    font-weight: 700;
+  
+    overflow: hidden;
+  }
+  .menu a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+.menu-center{
+display:flex;
+position:relative;
+left:32%;
+margin-bottom:10px;
+}
+      
+.menu-center li{
+list-style: none;
+display:inline-block;
+margin-left:40px;
+}
+    
+.imagen:hover{
+filter: opacity(.5); /*efecto de transpariencia */
+transition-duration: .7s; 
+}
+.content{
+position:relative;
+top:-2%;
+left:18%;
+width:800px;
+height:300px;
+}
+.content p {
+width:600px;
+height:600px;
+margin:0;
+color:var(--color);
+font-family:var(--font);
+text-align:center;
+font-size:1.5rem;
+position: relative;
+left:15%;
+top:40%;
+}
+.home{
+width:100vw;
+height:100vh;
+}
+
+
+.content-history{
+position:relative;
+left:28%;
+width:600px;
+height:800px;
+}
+.content-history h1,h2{
+font-family: Arial,Sans-Serif;
+font-weight: 700;
+font-size:2.5rem;
+color:hsla(0, 100%, 50%, .5);
+text-align:center;
+position:relative;
+}
+.content-history h2{
+font-size:2rem;
+margin-bottom:20px;
+}
+.content-history p{
+margin-bottom:120px;
+float:right;
+color:var(--color);
+font-family:var(--font);
+text-align:center;
+font-size:1.2rem;
+}
+.content-history img{ /*sirve para poner la imagen al rededor del parrafo*/
+width:200px;
+height:200px;
+float:right;
+margin-top:1px;
+}
+.disk h3{
+font-family: Arial,Sans-Serif;
+font-weight: 700;
+font-size:1.5rem;
+color:hsla(0, 100%, 50%, .5);
+}
+.disk ol{
+font-family:var(--font);
+color:var(--color);
+position: relative;
+left:5%;  
+}
